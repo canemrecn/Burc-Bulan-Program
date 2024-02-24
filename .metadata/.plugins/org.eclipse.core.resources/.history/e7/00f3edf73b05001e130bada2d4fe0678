@@ -1,0 +1,39 @@
+package bbp;
+
+import java.util.Scanner;
+
+public class bbpp {
+    public static void main(String[] args) {
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.print("Dogum Tarihiniz Ay Olarak: ");
+        int month = inputScanner.nextInt();
+
+        System.out.print("Dogum Tarihiniz Gun Olarak: ");
+        int day = inputScanner.nextInt();
+
+        if (month > 0 && month < 13) {
+            if (month == 1) {
+                if (day <= 21) {
+                    System.out.println("Burcunuz: Oglak");
+                } else {
+                    System.out.println("Burcunuz: Kova");
+                }
+            } else if (month == 2) {
+                if (day <= 19) {
+                    System.out.println("Burcunuz: Kova");
+                } else {
+                    System.out.println("Burcunuz: Balik");
+                }
+            } else if (month == 3) {
+                if (day <= 20) {
+                    System.out.println("Burcunuz: Balik");
+                } else {
+                    System.out.println("Burcunuz: Koc");
+                }
+            }
+        } else {
+        	System.out.println("Hatali Giris Yaptiniz");
+        }
+    }
+}
+
